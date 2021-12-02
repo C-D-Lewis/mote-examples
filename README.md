@@ -9,10 +9,10 @@ Example code and files for Peter.
 
 ### Connect to the Pi
 
-Discover the IP address, usually via your router's internal control panel.
+Discover the PI's IP address, usually via your router's internal control panel:
 
 1. Find the gateway address, usually `192.168.0.1` or find out on Google.
-2. Look at any available list of connected devices, or check the DHCP list.
+2. Look at any available list of connected devices, or check the DHCP client list.
 
 Use `ssh` (Secure Shell), for example when the IP is `192.168.0.109`:
 
@@ -69,23 +69,35 @@ cp README.md README.md.backup
 mv README.md.backup README.md
 ```
 
-### Run a Python script
-
-Use Python 3.x (2.x is deprecated)
+### Delete a file
 
 ```shell
-python3 mote/brideg.py
+rm README.md
 ```
 
-### Update this repository
-
-Use `git` to reset all local changes:
+If the file was controlled with `git`, check it out to bring it back:
 
 ```shell
 git checkout .
 ```
 
-Then fetch new changes and update the local `main` branch:
+### Run a Python script
+
+Use Python 3.x (2.x is deprecated)
+
+```shell
+python3 mote/rgb.py
+```
+
+### Update this repository with more recent changes
+
+Reset all local changes:
+
+```shell
+git checkout .
+```
+
+Then update the local `main` branch:
 
 ```shell
 git checkout main

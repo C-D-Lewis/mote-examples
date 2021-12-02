@@ -15,14 +15,12 @@ def animate():
     leds.set_pixel(index + 1, ON)
     leds.update()
 
-    # time.sleep(0.1)
+    time.sleep(0.1)
     index = (index + 1) % leds.NUM_PIXELS
 
 # The main function
 def main():
   leds.init()
-  leds.clear()
-  leds.update()
   animate()
 
 if '__main__' in __name__:
