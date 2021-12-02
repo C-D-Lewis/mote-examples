@@ -115,3 +115,17 @@ or reboot:
 ```shell
 sudo reboot
 ```
+
+### Update system software
+
+Update the list of packages that can be upgraded:
+
+```shell
+sudo apt update
+```
+
+Then install those upgrades (and auto-answer 'yes'):
+
+```shell
+sudo apt upgrade -y
+```
