@@ -32,7 +32,7 @@ def set_pixel(i, color):
 #
 # color - Array of r, g, b values
 def set_all(color):
-  mote.set_all(color[0], color[1], color[3])
+  mote.set_all(color[0], color[1], color[2])
 
 # Show pixel changes
 def update():
