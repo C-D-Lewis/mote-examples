@@ -11,6 +11,8 @@ Example code and files for Peter.
 
 Discover the PI's IP address, usually via your router's internal control panel:
 
+> If plugged into a display, run `ifconfig | grep 192` instead.
+
 1. Find the gateway address, usually `192.168.0.1` or find out on Google.
 2. Look at any available list of connected devices, or check the DHCP client list.
 
@@ -54,7 +56,7 @@ nano README.md
 
 Use the commands at the bottom to save and exit:
 
-* `ctrl + s` - Save
+* `ctrl + o` - Overwrite (Save)
 * `ctrl + x` - Exit
 
 ### Move or copy a file or directory
