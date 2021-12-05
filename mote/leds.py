@@ -62,13 +62,13 @@ def update():
 #
 # target - Array of r, g, b values to fade to
 def fade_to(target):
-  # Assume all colors are the same
+  # Assume all colors are the same in the stick
   current = state.copy()[0]
-
   while current != target:
     set_all(current)
     update()
 
+    # Approach target value in STEP, else the difference if smaller than STEP
     diff = abs(current[0] - target[0])
     current[0] += (STEP if diff > STEP else diff) * (-1 if current[0] > target[0] else 1)
     diff = abs(current[1] - target[1])
