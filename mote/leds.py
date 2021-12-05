@@ -21,7 +21,7 @@ for i in range(0, NUM_PIXELS):
 # value - Optional new color to use for all pixels in the state
 def reset_state(value = [0, 0, 0]):
   for i in range(0, NUM_PIXELS):
-    state[i] = [0, 0, 0]
+    state[i] = value
 
 # Initialise library if on Pi
 #
