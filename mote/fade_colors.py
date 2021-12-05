@@ -29,9 +29,9 @@ def animate():
 
   while True:
     # Pick a random next color, not the same as the last
-    index = random.randint(0, len(COLORS)) 
+    index = random.randint(0, len(COLORS) - 1) 
     while index is last_index:
-      index = random.randint(0, len(COLORS)) 
+      index = random.randint(0, len(COLORS) - 1) 
 
     # Fade to that new color
     leds.fade_to(COLORS[index])
