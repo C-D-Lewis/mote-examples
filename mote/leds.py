@@ -6,6 +6,10 @@ import motephat as mote
 NUM_CHANNELS = 2
 # Number of LEDs per stick
 NUM_PIXELS = 16
+# Fade interval
+INTERVAL = 0.01
+# Fade step size
+STEP = 5
 
 state = []
 for i in range(0, NUM_PIXELS):
