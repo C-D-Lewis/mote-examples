@@ -58,7 +58,7 @@ def update():
 # target - Array of r, g, b values to fade to
 def fade_to(target):
   # Assume all colors are the same
-  current = state.copy()
+  current = state.copy()[0]
 
   while current != target:
     set_all(current[0])
