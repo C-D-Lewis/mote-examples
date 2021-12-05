@@ -1,6 +1,7 @@
 # Helper file to make mote animation scripts easier - just 'import leds'
 
 import motephat as mote
+import time
 
 # Number of mote sticks connected
 NUM_CHANNELS = 2
