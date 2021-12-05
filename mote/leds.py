@@ -61,7 +61,7 @@ def fade_to(target):
   current = state.copy()[0]
 
   while current != target:
-    set_all(current[0])
+    set_all(current)
     update()
 
     diff = abs(current[0] - target[0])
