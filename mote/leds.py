@@ -75,4 +75,4 @@ def fade_to(target):
     current[1] += (STEP if diff > STEP else diff) * (-1 if current[1] > target[1] else 1)
     diff = abs(current[2] - target[2])
     current[2] += (STEP if diff > STEP else diff) * (-1 if current[2] > target[2] else 1)
-    time.sleep(INTERVAL)
+    # time.sleep(INTERVAL)
