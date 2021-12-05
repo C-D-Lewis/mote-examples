@@ -1,4 +1,4 @@
-# peter-examples
+# mote-examples
 
 Example code and files for Peter.
 
