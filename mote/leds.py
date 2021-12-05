@@ -8,6 +8,8 @@ NUM_CHANNELS = 2
 NUM_PIXELS = 16
 
 state = []
+for i in range(0, NUM_PIXELS):
+  state.append([0, 0, 0])
 
 # Reset the internal pixel state
 #
