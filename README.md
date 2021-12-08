@@ -2,7 +2,7 @@
 
 Example code and files for Peter.
 
-* `mote` - Example scripts for the Mote RGB lights.
+* `mote` - Example scripts for the Mote RGB lights. Run with `python3`.
 
 
 ## Cheatsheet
