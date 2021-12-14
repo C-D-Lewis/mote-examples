@@ -20,6 +20,9 @@ for i in range(0, NUM_PIXELS):
 def is_pi():
   return 'arm' in platform.machine()
 
+if is_pi():
+  import motephat as mote
+
 # Reset the internal pixel state
 #
 # value - Optional new color to use for all pixels in the state
@@ -34,7 +37,6 @@ def init(stay_on = False):
   if not is_pi():
     return
 
-  import motephat as mote
   mote.set_clear_on_exit(not stay_on)
   reset_state()
 
