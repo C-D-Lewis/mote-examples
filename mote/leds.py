@@ -58,6 +58,10 @@ def clear():
 # i     - Pixel index from the cable end
 # color - Array of r, g, b values
 def set_pixel(i, color):
+  # Ignore out of range
+  if i >= NUM_PIXELS:
+    return
+
   state[i] = color
 
   if not is_pi():
