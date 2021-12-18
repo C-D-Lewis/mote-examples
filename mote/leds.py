@@ -91,6 +91,8 @@ def update():
 #
 # target - Array of r, g, b values to fade to
 def fade_to(target):
+  print('mote: fade_to {}'.format(target))
+
   # Assume all colors are the same in the stick
   current = state.copy()[0]
   while current != target:
@@ -105,3 +107,5 @@ def fade_to(target):
     diff = abs(current[2] - target[2])
     current[2] += (STEP if diff > STEP else diff) * (-1 if current[2] > target[2] else 1)
     time.sleep(INTERVAL)
+  
+  print('mote: fade_to complete')

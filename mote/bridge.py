@@ -14,6 +14,7 @@ def animate():
     leds.set_pixel(index, OFF)
     leds.set_pixel(index + 1, ON)
     leds.update()
+    print('index {}'.format(index))
 
     time.sleep(0.1)
     index = (index + 1) % leds.NUM_PIXELS
