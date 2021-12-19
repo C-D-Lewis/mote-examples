@@ -1,6 +1,6 @@
 # mote-examples
 
-Example code and files for Peter.
+Example code and files for mote phat.
 
 * `mote` - Example scripts for the Mote RGB lights. Run with `python3`.
 
